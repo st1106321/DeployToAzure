@@ -1,8 +1,7 @@
 extends layout
 
 block content
-  a(href="/") Home
-  h1= 'Here are some aliments full of iron!'
+  h2= 'Anemia : Here are some aliments full of iron!'
   ul
     each solution in solutions
       li= solution.type + ': ' + solution.name
