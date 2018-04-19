@@ -4,7 +4,7 @@ const request = require('request');
 const apiURL = require('./apiURLs');
 
 const libidoSolutions = function (req, res) {
-    const path = '/api/ctrlApiLibido';
+    const path = '/api/libido';
     const requestOptions = {
         url: apiURL.server + path,
         method: 'GET',
@@ -29,26 +29,6 @@ const libidoSolutions = function (req, res) {
     )
 };
 
-// var libidoSolutions = function(req, res){
-//     res.render('libido',{
-//         solutions:
-//         [
-//             {type:'condiment', name:'cinnamon'},
-//             {type:'condiment', name:'ginger'},
-//             {type:'condiment', name:'pepper'},
-//             {type:'condiment', name:'savory'},
-
-//             {type:'vegetable', name:'celeri stick'},
-//             {type:'vegetable', name:'celeriac'},
-            
-//             {type:'molluscs', name:'oyster'},
-
-//             {type:'fruit', name:'pomegranate'},
-            
-//             {type:'else', name:'cocoa'},
-//             {type:'else', name:'chocolate'}
-//         ]});
-// };
 module.exports = {
     libidoSolutions
 };

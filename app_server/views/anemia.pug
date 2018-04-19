@@ -3,5 +3,8 @@ extends layout
 block content
   h2= 'Anemia : Here are some aliments full of iron!'
   ul
-    each solution in solutions
+    each solution in anemia
       li= solution.type + ': ' + solution.name
+
+    //- each solution in solutions
+    //-   li= solution.type + ': ' + solution.name
