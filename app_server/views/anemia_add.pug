@@ -1,0 +1,14 @@
+extends layout
+
+block content
+    .row
+        h4 New anemia solution
+    form(action="", method="post")
+        .form-group.row
+        label Type
+            input.form-control(name="type")
+        .form-group.row
+        label Name
+            input.form-control(name="name")
+        .form-group.row
+            button.btn-primary Add
